@@ -1,5 +1,3 @@
-FROM tutum/nginx
-
-RUN rm /etc/nginx/sites-enabled/default
+FROM nginx:latest
 
 COPY sites-enabled/ /etc/nginx/sites-enabled
